@@ -1,0 +1,890 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0001_ds245_20195_tract'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2015-2019
+Geographic level: Census Tract (by State--County)
+Extent:           California
+Dataset:          2019 American Community Survey: 5-Year Data [2015-2019, Tracts & Larger Areas]
+   NHGIS code:    2015_2019_ACS5b
+   NHGIS ID:      ds245
+Breakdown(s):     Geographic Component:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Geographical Mobility in the Past Year by Tenure for Current Residence in the United States
+   Universe:    Population 1 year and over in households in the United States
+   Source code: B07013
+   NHGIS code:  AL7R
+ 
+2. Geographical Mobility in the Past Year by Tenure for Current Residence in Puerto Rico
+   Universe:    Population 1 year and over in households in Puerto Rico
+   Source code: B07013PR
+   NHGIS code:  AL7S
+ 
+3. Means of Transportation to Work by Tenure
+   Universe:    Workers 16 years and over in households
+   Source code: B08137
+   NHGIS code:  AL8P
+ 
+4. Poverty Status in the Past 12 Months of Families by Household Type by Tenure
+   Universe:    Families
+   Source code: B17019
+   NHGIS code:  AMCO
+ 
+5. Vacant - Current Residence Elsewhere
+   Universe:    Vacant housing units
+   Source code: B25005
+   NHGIS code:  AMH8
+ 
+6. Tenure by Household Type (Including Living Alone) and Age of Householder
+   Universe:    Occupied housing units
+   Source code: B25011
+   NHGIS code:  AMH9
+ 
+7. Tenure by Families and Presence of Own Children
+   Universe:    Occupied housing units
+   Source code: B25012
+   NHGIS code:  AMIA
+ 
+8. Tenure by Educational Attainment of Householder
+   Universe:    Occupied housing units
+   Source code: B25013
+   NHGIS code:  AMIB
+ 
+9. Occupants per Room (White Alone Householder)
+   Universe:    Occupied housing units with a householder who is White alone
+   Source code: B25014A
+   NHGIS code:  AMIC
+ 
+10. Occupants per Room (Black or African American Alone Householder)
+    Universe:    Occupied housing units with a householder who is Black or African American alone
+    Source code: B25014B
+    NHGIS code:  AMID
+ 
+11. Occupants per Room (American Indian and Alaska Native Alone Householder)
+    Universe:    Occupied housing units with a householder who is American Indian and Alaska Native alone
+    Source code: B25014C
+    NHGIS code:  AMIE
+ 
+12. Occupants per Room (Asian Alone Householder)
+    Universe:    Occupied housing units with a householder who is Asian alone
+    Source code: B25014D
+    NHGIS code:  AMIF
+ 
+13. Occupants per Room (Native Hawaiian and Other Pacific Islander Alone Householder)
+    Universe:    Occupied housing units with a householder who is Native Hawaiian and Other Pacific Islander alone
+    Source code: B25014E
+    NHGIS code:  AMIG
+ 
+14. Occupants per Room (Some Other Race Alone Householder)
+    Universe:    Occupied housing units with a householder who is Some Other Race alone
+    Source code: B25014F
+    NHGIS code:  AMIH
+ 
+15. Occupants per Room (Two or More Races Householder)
+    Universe:    Occupied housing units with a householder who is Two or More Races
+    Source code: B25014G
+    NHGIS code:  AMII
+ 
+16. Occupants per Room (White Alone, Not Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is White alone, not Hispanic or Latino
+    Source code: B25014H
+    NHGIS code:  AMIJ
+ 
+17. Occupants per Room (Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is Hispanic or Latino
+    Source code: B25014I
+    NHGIS code:  AMIK
+ 
+18. Total Population in Occupied Housing Units by Tenure by Year Householder Moved into Unit
+    Universe:    Total population in occupied housing units
+    Source code: B25026
+    NHGIS code:  AMIL
+ 
+19. Mortgage Status by Age of Householder
+    Universe:    Owner-occupied housing units
+    Source code: B25027
+    NHGIS code:  AMIM
+ 
+20. Units in Structure (White Alone Householder)
+    Universe:    Occupied housing units with a householder who is White alone
+    Source code: B25032A
+    NHGIS code:  AMIO
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STUSAB:      State Postal Abbreviation
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AIHHTLI:     American Indian Trust Land/ Hawaiian Home Land Indicator
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2019-2021, 116th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PCI:         Principal City Indicator
+        PUMAA:       Public Use Microdata Area Code
+        GEOID:       Census Geographic Identifier
+        BTTRA:       Tribal Census Tract Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year by Tenure for Current Residence in the United States
+    Universe:    Population 1 year and over in households in the United States
+    Source code: B07013
+    NHGIS code:  AL7R
+        AL7RE001:    Total
+        AL7RE002:    Householder lived in owner-occupied housing units
+        AL7RE003:    Householder lived in renter-occupied housing units
+        AL7RE004:    Same house 1 year ago
+        AL7RE005:    Same house 1 year ago: Householder lived in owner-occupied housing units
+        AL7RE006:    Same house 1 year ago: Householder lived in renter-occupied housing units
+        AL7RE007:    Moved within same county
+        AL7RE008:    Moved within same county: Householder lived in owner-occupied housing units
+        AL7RE009:    Moved within same county: Householder lived in renter-occupied housing units
+        AL7RE010:    Moved from different county within same state
+        AL7RE011:    Moved from different county within same state: Householder lived in owner-occupied housing units
+        AL7RE012:    Moved from different county within same state: Householder lived in renter-occupied housing units
+        AL7RE013:    Moved from different state
+        AL7RE014:    Moved from different state: Householder lived in owner-occupied housing units
+        AL7RE015:    Moved from different state: Householder lived in renter-occupied housing units
+        AL7RE016:    Moved from abroad
+        AL7RE017:    Moved from abroad: Householder lived in owner-occupied housing units
+        AL7RE018:    Moved from abroad: Householder lived in renter-occupied housing units
+ 
+    Table 2:     Geographical Mobility in the Past Year by Tenure for Current Residence in Puerto Rico
+    Universe:    Population 1 year and over in households in Puerto Rico
+    Source code: B07013PR
+    NHGIS code:  AL7S
+        AL7SE001:    Total
+        AL7SE002:    Householder lived in owner-occupied housing units
+        AL7SE003:    Householder lived in renter-occupied housing units
+        AL7SE004:    Same house 1 year ago
+        AL7SE005:    Same house 1 year ago: Householder lived in owner-occupied housing units
+        AL7SE006:    Same house 1 year ago: Householder lived in renter-occupied housing units
+        AL7SE007:    Moved within same municipio
+        AL7SE008:    Moved within same municipio: Householder lived in owner-occupied housing units
+        AL7SE009:    Moved within same municipio: Householder lived in renter-occupied housing units
+        AL7SE010:    Moved from different municipio
+        AL7SE011:    Moved from different municipio: Householder lived in owner-occupied housing units
+        AL7SE012:    Moved from different municipio: Householder lived in renter-occupied housing units
+        AL7SE013:    Moved from the United States
+        AL7SE014:    Moved from the United States: Householder lived in owner-occupied housing units
+        AL7SE015:    Moved from the United States: Householder lived in renter-occupied housing units
+        AL7SE016:    Moved from elsewhere
+        AL7SE017:    Moved from elsewhere: Householder lived in owner-occupied housing units
+        AL7SE018:    Moved from elsewhere: Householder lived in renter-occupied housing units
+ 
+    Table 3:     Means of Transportation to Work by Tenure
+    Universe:    Workers 16 years and over in households
+    Source code: B08137
+    NHGIS code:  AL8P
+        AL8PE001:    Total
+        AL8PE002:    Householder lived in owner-occupied housing units
+        AL8PE003:    Householder lived in renter-occupied housing units
+        AL8PE004:    Car, truck, or van - drove alone
+        AL8PE005:    Car, truck, or van - drove alone: Householder lived in owner-occupied housing units
+        AL8PE006:    Car, truck, or van - drove alone: Householder lived in renter-occupied housing units
+        AL8PE007:    Car, truck, or van - carpooled
+        AL8PE008:    Car, truck, or van - carpooled: Householder lived in owner-occupied housing units
+        AL8PE009:    Car, truck, or van - carpooled: Householder lived in renter-occupied housing units
+        AL8PE010:    Public transportation (excluding taxicab)
+        AL8PE011:    Public transportation (excluding taxicab): Householder lived in owner-occupied housing units
+        AL8PE012:    Public transportation (excluding taxicab): Householder lived in renter-occupied housing units
+        AL8PE013:    Walked
+        AL8PE014:    Walked: Householder lived in owner-occupied housing units
+        AL8PE015:    Walked: Householder lived in renter-occupied housing units
+        AL8PE016:    Taxicab, motorcycle, bicycle, or other means
+        AL8PE017:    Taxicab, motorcycle, bicycle, or other means: Householder lived in owner-occupied housing units
+        AL8PE018:    Taxicab, motorcycle, bicycle, or other means: Householder lived in renter-occupied housing units
+        AL8PE019:    Worked from home
+        AL8PE020:    Worked from home: Householder lived in owner-occupied housing units
+        AL8PE021:    Worked from home: Householder lived in renter-occupied housing units
+ 
+    Table 4:     Poverty Status in the Past 12 Months of Families by Household Type by Tenure
+    Universe:    Families
+    Source code: B17019
+    NHGIS code:  AMCO
+        AMCOE001:    Total
+        AMCOE002:    Income in the past 12 months below poverty level
+        AMCOE003:    Income in the past 12 months below poverty level: Married-couple family
+        AMCOE004:    Income in the past 12 months below poverty level: Married-couple family: Owner occupied
+        AMCOE005:    Income in the past 12 months below poverty level: Married-couple family: Renter occupied
+        AMCOE006:    Income in the past 12 months below poverty level: Other families
+        AMCOE007:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present
+        AMCOE008:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present: Owner occupied
+        AMCOE009:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present: Renter occupied
+        AMCOE010:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present
+        AMCOE011:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present: Owner occupied
+        AMCOE012:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present: Renter occupied
+        AMCOE013:    Income in the past 12 months at or above poverty level
+        AMCOE014:    Income in the past 12 months at or above poverty level: Married-couple family
+        AMCOE015:    Income in the past 12 months at or above poverty level: Married-couple family: Owner occupied
+        AMCOE016:    Income in the past 12 months at or above poverty level: Married-couple family: Renter occupied
+        AMCOE017:    Income in the past 12 months at or above poverty level: Other families
+        AMCOE018:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present
+        AMCOE019:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present: Owner occupied
+        AMCOE020:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present: Renter occupied
+        AMCOE021:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present
+        AMCOE022:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present: Owner occupied
+        AMCOE023:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present: Renter occupied
+ 
+    Table 5:     Vacant - Current Residence Elsewhere
+    Universe:    Vacant housing units
+    Source code: B25005
+    NHGIS code:  AMH8
+        AMH8E001:    Total
+        AMH8E002:    Vacant - current residence elsewhere
+        AMH8E003:    All other vacant units
+ 
+    Table 6:     Tenure by Household Type (Including Living Alone) and Age of Householder
+    Universe:    Occupied housing units
+    Source code: B25011
+    NHGIS code:  AMH9
+        AMH9E001:    Total
+        AMH9E002:    Owner occupied
+        AMH9E003:    Owner occupied: Family households
+        AMH9E004:    Owner occupied: Family households: Married-couple family
+        AMH9E005:    Owner occupied: Family households: Married-couple family: Householder 15 to 34 years
+        AMH9E006:    Owner occupied: Family households: Married-couple family: Householder 35 to 64 years
+        AMH9E007:    Owner occupied: Family households: Married-couple family: Householder 65 years and over
+        AMH9E008:    Owner occupied: Family households: Other family
+        AMH9E009:    Owner occupied: Family households: Other family: Male householder, no spouse present
+        AMH9E010:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 15 to 34 years
+        AMH9E011:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 35 to 64 years
+        AMH9E012:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 65 years and over
+        AMH9E013:    Owner occupied: Family households: Other family: Female householder, no spouse present
+        AMH9E014:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 15 to 34 years
+        AMH9E015:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 35 to 64 years
+        AMH9E016:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 65 years and over
+        AMH9E017:    Owner occupied: Nonfamily households
+        AMH9E018:    Owner occupied: Nonfamily households: Householder living alone
+        AMH9E019:    Owner occupied: Nonfamily households: Householder living alone: Householder 15 to 34 years
+        AMH9E020:    Owner occupied: Nonfamily households: Householder living alone: Householder 35 to 64 years
+        AMH9E021:    Owner occupied: Nonfamily households: Householder living alone: Householder 65 years and over
+        AMH9E022:    Owner occupied: Nonfamily households: Householder not living alone
+        AMH9E023:    Owner occupied: Nonfamily households: Householder not living alone: Householder 15 to 34 years
+        AMH9E024:    Owner occupied: Nonfamily households: Householder not living alone: Householder 35 to 64 years
+        AMH9E025:    Owner occupied: Nonfamily households: Householder not living alone: Householder 65 years and over
+        AMH9E026:    Renter occupied
+        AMH9E027:    Renter occupied: Family households
+        AMH9E028:    Renter occupied: Family households: Married-couple family
+        AMH9E029:    Renter occupied: Family households: Married-couple family: Householder 15 to 34 years
+        AMH9E030:    Renter occupied: Family households: Married-couple family: Householder 35 to 64 years
+        AMH9E031:    Renter occupied: Family households: Married-couple family: Householder 65 years and over
+        AMH9E032:    Renter occupied: Family households: Other family
+        AMH9E033:    Renter occupied: Family households: Other family: Male householder, no spouse present
+        AMH9E034:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 15 to 34 years
+        AMH9E035:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 35 to 64 years
+        AMH9E036:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 65 years and over
+        AMH9E037:    Renter occupied: Family households: Other family: Female householder, no spouse present
+        AMH9E038:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 15 to 34 years
+        AMH9E039:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 35 to 64 years
+        AMH9E040:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 65 years and over
+        AMH9E041:    Renter occupied: Nonfamily households
+        AMH9E042:    Renter occupied: Nonfamily households: Householder living alone
+        AMH9E043:    Renter occupied: Nonfamily households: Householder living alone: Householder 15 to 34 years
+        AMH9E044:    Renter occupied: Nonfamily households: Householder living alone: Householder 35 to 64 years
+        AMH9E045:    Renter occupied: Nonfamily households: Householder living alone: Householder 65 years and over
+        AMH9E046:    Renter occupied: Nonfamily households: Householder not living alone
+        AMH9E047:    Renter occupied: Nonfamily households: Householder not living alone: Householder 15 to 34 years
+        AMH9E048:    Renter occupied: Nonfamily households: Householder not living alone: Householder 35 to 64 years
+        AMH9E049:    Renter occupied: Nonfamily households: Householder not living alone: Householder 65 years and over
+ 
+    Table 7:     Tenure by Families and Presence of Own Children
+    Universe:    Occupied housing units
+    Source code: B25012
+    NHGIS code:  AMIA
+        AMIAE001:    Total
+        AMIAE002:    Owner-occupied housing units
+        AMIAE003:    Owner-occupied housing units: With related children of the householder under 18
+        AMIAE004:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18
+        AMIAE005:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years only
+        AMIAE006:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years and 6 to 17 years
+        AMIAE007:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: 6 to 17 years
+        AMIAE008:    Owner-occupied housing units: With related children of the householder under 18: No own children of the householder under 18
+        AMIAE009:    Owner-occupied housing units: No related children of the householder under 18
+        AMIAE010:    Renter-occupied housing units
+        AMIAE011:    Renter-occupied housing units: With related children of the householder under 18
+        AMIAE012:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18
+        AMIAE013:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years only
+        AMIAE014:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years and 6 to 17 years
+        AMIAE015:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: 6 to 17 years
+        AMIAE016:    Renter-occupied housing units: With related children of the householder under 18: No own children of the householder under 18
+        AMIAE017:    Renter-occupied housing units: No related children of the householder under 18
+ 
+    Table 8:     Tenure by Educational Attainment of Householder
+    Universe:    Occupied housing units
+    Source code: B25013
+    NHGIS code:  AMIB
+        AMIBE001:    Total
+        AMIBE002:    Owner-occupied housing units
+        AMIBE003:    Owner-occupied housing units: Less than high school graduate
+        AMIBE004:    Owner-occupied housing units: High school graduate (including equivalency)
+        AMIBE005:    Owner-occupied housing units: Some college or associate's degree
+        AMIBE006:    Owner-occupied housing units: Bachelor's degree or higher
+        AMIBE007:    Renter-occupied housing units
+        AMIBE008:    Renter-occupied housing units: Less than high school graduate
+        AMIBE009:    Renter-occupied housing units: High school graduate (including equivalency)
+        AMIBE010:    Renter-occupied housing units: Some college or associate's degree
+        AMIBE011:    Renter-occupied housing units: Bachelor's degree or higher
+ 
+    Table 9:     Occupants per Room (White Alone Householder)
+    Universe:    Occupied housing units with a householder who is White alone
+    Source code: B25014A
+    NHGIS code:  AMIC
+        AMICE001:    Total
+        AMICE002:    1.00 or less occupants per room
+        AMICE003:    1.01 or more occupants per room
+ 
+    Table 10:    Occupants per Room (Black or African American Alone Householder)
+    Universe:    Occupied housing units with a householder who is Black or African American alone
+    Source code: B25014B
+    NHGIS code:  AMID
+        AMIDE001:    Total
+        AMIDE002:    1.00 or less occupants per room
+        AMIDE003:    1.01 or more occupants per room
+ 
+    Table 11:    Occupants per Room (American Indian and Alaska Native Alone Householder)
+    Universe:    Occupied housing units with a householder who is American Indian and Alaska Native alone
+    Source code: B25014C
+    NHGIS code:  AMIE
+        AMIEE001:    Total
+        AMIEE002:    1.00 or less occupants per room
+        AMIEE003:    1.01 or more occupants per room
+ 
+    Table 12:    Occupants per Room (Asian Alone Householder)
+    Universe:    Occupied housing units with a householder who is Asian alone
+    Source code: B25014D
+    NHGIS code:  AMIF
+        AMIFE001:    Total
+        AMIFE002:    1.00 or less occupants per room
+        AMIFE003:    1.01 or more occupants per room
+ 
+    Table 13:    Occupants per Room (Native Hawaiian and Other Pacific Islander Alone Householder)
+    Universe:    Occupied housing units with a householder who is Native Hawaiian and Other Pacific Islander alone
+    Source code: B25014E
+    NHGIS code:  AMIG
+        AMIGE001:    Total
+        AMIGE002:    1.00 or less occupants per room
+        AMIGE003:    1.01 or more occupants per room
+ 
+    Table 14:    Occupants per Room (Some Other Race Alone Householder)
+    Universe:    Occupied housing units with a householder who is Some Other Race alone
+    Source code: B25014F
+    NHGIS code:  AMIH
+        AMIHE001:    Total
+        AMIHE002:    1.00 or less occupants per room
+        AMIHE003:    1.01 or more occupants per room
+ 
+    Table 15:    Occupants per Room (Two or More Races Householder)
+    Universe:    Occupied housing units with a householder who is Two or More Races
+    Source code: B25014G
+    NHGIS code:  AMII
+        AMIIE001:    Total
+        AMIIE002:    1.00 or less occupants per room
+        AMIIE003:    1.01 or more occupants per room
+ 
+    Table 16:    Occupants per Room (White Alone, Not Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is White alone, not Hispanic or Latino
+    Source code: B25014H
+    NHGIS code:  AMIJ
+        AMIJE001:    Total
+        AMIJE002:    1.00 or less occupants per room
+        AMIJE003:    1.01 or more occupants per room
+ 
+    Table 17:    Occupants per Room (Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is Hispanic or Latino
+    Source code: B25014I
+    NHGIS code:  AMIK
+        AMIKE001:    Total
+        AMIKE002:    1.00 or less occupants per room
+        AMIKE003:    1.01 or more occupants per room
+ 
+    Table 18:    Total Population in Occupied Housing Units by Tenure by Year Householder Moved into Unit
+    Universe:    Total population in occupied housing units
+    Source code: B25026
+    NHGIS code:  AMIL
+        AMILE001:    Total population in occupied housing units
+        AMILE002:    Owner occupied
+        AMILE003:    Owner occupied: Moved in 2017 or later
+        AMILE004:    Owner occupied: Moved in 2015 to 2016
+        AMILE005:    Owner occupied: Moved in 2010 to 2014
+        AMILE006:    Owner occupied: Moved in 2000 to 2009
+        AMILE007:    Owner occupied: Moved in 1990 to 1999
+        AMILE008:    Owner occupied: Moved in 1989 or earlier
+        AMILE009:    Renter occupied
+        AMILE010:    Renter occupied: Moved in 2017 or later
+        AMILE011:    Renter occupied: Moved in 2015 to 2016
+        AMILE012:    Renter occupied: Moved in 2010 to 2014
+        AMILE013:    Renter occupied: Moved in 2000 to 2009
+        AMILE014:    Renter occupied: Moved in 1990 to 1999
+        AMILE015:    Renter occupied: Moved in 1989 or earlier
+ 
+    Table 19:    Mortgage Status by Age of Householder
+    Universe:    Owner-occupied housing units
+    Source code: B25027
+    NHGIS code:  AMIM
+        AMIME001:    Total
+        AMIME002:    Housing units with a mortgage
+        AMIME003:    Housing units with a mortgage: Householder 15 to 34 years
+        AMIME004:    Housing units with a mortgage: Householder 35 to 44 years
+        AMIME005:    Housing units with a mortgage: Householder 45 to 54 years
+        AMIME006:    Housing units with a mortgage: Householder 55 to 59 years
+        AMIME007:    Housing units with a mortgage: Householder 60 to 64 years
+        AMIME008:    Housing units with a mortgage: Householder 65 to 74 years
+        AMIME009:    Housing units with a mortgage: Householder 75 years and over
+        AMIME010:    Housing units without a mortgage
+        AMIME011:    Housing units without a mortgage: Householder 15 to 34 years
+        AMIME012:    Housing units without a mortgage: Householder 35 to 44 years
+        AMIME013:    Housing units without a mortgage: Householder 45 to 54 years
+        AMIME014:    Housing units without a mortgage: Householder 55 to 59 years
+        AMIME015:    Housing units without a mortgage: Householder 60 to 64 years
+        AMIME016:    Housing units without a mortgage: Householder 65 to 74 years
+        AMIME017:    Housing units without a mortgage: Householder 75 years and over
+ 
+    Table 20:    Units in Structure (White Alone Householder)
+    Universe:    Occupied housing units with a householder who is White alone
+    Source code: B25032A
+    NHGIS code:  AMIO
+        AMIOE001:    Total
+        AMIOE002:    1, detached
+        AMIOE003:    1, attached
+        AMIOE004:    2
+        AMIOE005:    3 or 4
+        AMIOE006:    5 to 9
+        AMIOE007:    10 to 19
+        AMIOE008:    20 to 49
+        AMIOE009:    50 or more
+        AMIOE010:    Mobile home
+        AMIOE011:    Boat, RV, van, etc.
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Geographical Mobility in the Past Year by Tenure for Current Residence in the United States
+    Universe:    Population 1 year and over in households in the United States
+    Source code: B07013
+    NHGIS code:  AL7R
+        AL7RM001:    Total
+        AL7RM002:    Householder lived in owner-occupied housing units
+        AL7RM003:    Householder lived in renter-occupied housing units
+        AL7RM004:    Same house 1 year ago
+        AL7RM005:    Same house 1 year ago: Householder lived in owner-occupied housing units
+        AL7RM006:    Same house 1 year ago: Householder lived in renter-occupied housing units
+        AL7RM007:    Moved within same county
+        AL7RM008:    Moved within same county: Householder lived in owner-occupied housing units
+        AL7RM009:    Moved within same county: Householder lived in renter-occupied housing units
+        AL7RM010:    Moved from different county within same state
+        AL7RM011:    Moved from different county within same state: Householder lived in owner-occupied housing units
+        AL7RM012:    Moved from different county within same state: Householder lived in renter-occupied housing units
+        AL7RM013:    Moved from different state
+        AL7RM014:    Moved from different state: Householder lived in owner-occupied housing units
+        AL7RM015:    Moved from different state: Householder lived in renter-occupied housing units
+        AL7RM016:    Moved from abroad
+        AL7RM017:    Moved from abroad: Householder lived in owner-occupied housing units
+        AL7RM018:    Moved from abroad: Householder lived in renter-occupied housing units
+ 
+    Table 2:     Geographical Mobility in the Past Year by Tenure for Current Residence in Puerto Rico
+    Universe:    Population 1 year and over in households in Puerto Rico
+    Source code: B07013PR
+    NHGIS code:  AL7S
+        AL7SM001:    Total
+        AL7SM002:    Householder lived in owner-occupied housing units
+        AL7SM003:    Householder lived in renter-occupied housing units
+        AL7SM004:    Same house 1 year ago
+        AL7SM005:    Same house 1 year ago: Householder lived in owner-occupied housing units
+        AL7SM006:    Same house 1 year ago: Householder lived in renter-occupied housing units
+        AL7SM007:    Moved within same municipio
+        AL7SM008:    Moved within same municipio: Householder lived in owner-occupied housing units
+        AL7SM009:    Moved within same municipio: Householder lived in renter-occupied housing units
+        AL7SM010:    Moved from different municipio
+        AL7SM011:    Moved from different municipio: Householder lived in owner-occupied housing units
+        AL7SM012:    Moved from different municipio: Householder lived in renter-occupied housing units
+        AL7SM013:    Moved from the United States
+        AL7SM014:    Moved from the United States: Householder lived in owner-occupied housing units
+        AL7SM015:    Moved from the United States: Householder lived in renter-occupied housing units
+        AL7SM016:    Moved from elsewhere
+        AL7SM017:    Moved from elsewhere: Householder lived in owner-occupied housing units
+        AL7SM018:    Moved from elsewhere: Householder lived in renter-occupied housing units
+ 
+    Table 3:     Means of Transportation to Work by Tenure
+    Universe:    Workers 16 years and over in households
+    Source code: B08137
+    NHGIS code:  AL8P
+        AL8PM001:    Total
+        AL8PM002:    Householder lived in owner-occupied housing units
+        AL8PM003:    Householder lived in renter-occupied housing units
+        AL8PM004:    Car, truck, or van - drove alone
+        AL8PM005:    Car, truck, or van - drove alone: Householder lived in owner-occupied housing units
+        AL8PM006:    Car, truck, or van - drove alone: Householder lived in renter-occupied housing units
+        AL8PM007:    Car, truck, or van - carpooled
+        AL8PM008:    Car, truck, or van - carpooled: Householder lived in owner-occupied housing units
+        AL8PM009:    Car, truck, or van - carpooled: Householder lived in renter-occupied housing units
+        AL8PM010:    Public transportation (excluding taxicab)
+        AL8PM011:    Public transportation (excluding taxicab): Householder lived in owner-occupied housing units
+        AL8PM012:    Public transportation (excluding taxicab): Householder lived in renter-occupied housing units
+        AL8PM013:    Walked
+        AL8PM014:    Walked: Householder lived in owner-occupied housing units
+        AL8PM015:    Walked: Householder lived in renter-occupied housing units
+        AL8PM016:    Taxicab, motorcycle, bicycle, or other means
+        AL8PM017:    Taxicab, motorcycle, bicycle, or other means: Householder lived in owner-occupied housing units
+        AL8PM018:    Taxicab, motorcycle, bicycle, or other means: Householder lived in renter-occupied housing units
+        AL8PM019:    Worked from home
+        AL8PM020:    Worked from home: Householder lived in owner-occupied housing units
+        AL8PM021:    Worked from home: Householder lived in renter-occupied housing units
+ 
+    Table 4:     Poverty Status in the Past 12 Months of Families by Household Type by Tenure
+    Universe:    Families
+    Source code: B17019
+    NHGIS code:  AMCO
+        AMCOM001:    Total
+        AMCOM002:    Income in the past 12 months below poverty level
+        AMCOM003:    Income in the past 12 months below poverty level: Married-couple family
+        AMCOM004:    Income in the past 12 months below poverty level: Married-couple family: Owner occupied
+        AMCOM005:    Income in the past 12 months below poverty level: Married-couple family: Renter occupied
+        AMCOM006:    Income in the past 12 months below poverty level: Other families
+        AMCOM007:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present
+        AMCOM008:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present: Owner occupied
+        AMCOM009:    Income in the past 12 months below poverty level: Other families: Male householder, no spouse present: Renter occupied
+        AMCOM010:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present
+        AMCOM011:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present: Owner occupied
+        AMCOM012:    Income in the past 12 months below poverty level: Other families: Female householder, no spouse present: Renter occupied
+        AMCOM013:    Income in the past 12 months at or above poverty level
+        AMCOM014:    Income in the past 12 months at or above poverty level: Married-couple family
+        AMCOM015:    Income in the past 12 months at or above poverty level: Married-couple family: Owner occupied
+        AMCOM016:    Income in the past 12 months at or above poverty level: Married-couple family: Renter occupied
+        AMCOM017:    Income in the past 12 months at or above poverty level: Other families
+        AMCOM018:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present
+        AMCOM019:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present: Owner occupied
+        AMCOM020:    Income in the past 12 months at or above poverty level: Other families: Male householder, no spouse present: Renter occupied
+        AMCOM021:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present
+        AMCOM022:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present: Owner occupied
+        AMCOM023:    Income in the past 12 months at or above poverty level: Other families: Female householder, no spouse present: Renter occupied
+ 
+    Table 5:     Vacant - Current Residence Elsewhere
+    Universe:    Vacant housing units
+    Source code: B25005
+    NHGIS code:  AMH8
+        AMH8M001:    Total
+        AMH8M002:    Vacant - current residence elsewhere
+        AMH8M003:    All other vacant units
+ 
+    Table 6:     Tenure by Household Type (Including Living Alone) and Age of Householder
+    Universe:    Occupied housing units
+    Source code: B25011
+    NHGIS code:  AMH9
+        AMH9M001:    Total
+        AMH9M002:    Owner occupied
+        AMH9M003:    Owner occupied: Family households
+        AMH9M004:    Owner occupied: Family households: Married-couple family
+        AMH9M005:    Owner occupied: Family households: Married-couple family: Householder 15 to 34 years
+        AMH9M006:    Owner occupied: Family households: Married-couple family: Householder 35 to 64 years
+        AMH9M007:    Owner occupied: Family households: Married-couple family: Householder 65 years and over
+        AMH9M008:    Owner occupied: Family households: Other family
+        AMH9M009:    Owner occupied: Family households: Other family: Male householder, no spouse present
+        AMH9M010:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 15 to 34 years
+        AMH9M011:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 35 to 64 years
+        AMH9M012:    Owner occupied: Family households: Other family: Male householder, no spouse present: Householder 65 years and over
+        AMH9M013:    Owner occupied: Family households: Other family: Female householder, no spouse present
+        AMH9M014:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 15 to 34 years
+        AMH9M015:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 35 to 64 years
+        AMH9M016:    Owner occupied: Family households: Other family: Female householder, no spouse present: Householder 65 years and over
+        AMH9M017:    Owner occupied: Nonfamily households
+        AMH9M018:    Owner occupied: Nonfamily households: Householder living alone
+        AMH9M019:    Owner occupied: Nonfamily households: Householder living alone: Householder 15 to 34 years
+        AMH9M020:    Owner occupied: Nonfamily households: Householder living alone: Householder 35 to 64 years
+        AMH9M021:    Owner occupied: Nonfamily households: Householder living alone: Householder 65 years and over
+        AMH9M022:    Owner occupied: Nonfamily households: Householder not living alone
+        AMH9M023:    Owner occupied: Nonfamily households: Householder not living alone: Householder 15 to 34 years
+        AMH9M024:    Owner occupied: Nonfamily households: Householder not living alone: Householder 35 to 64 years
+        AMH9M025:    Owner occupied: Nonfamily households: Householder not living alone: Householder 65 years and over
+        AMH9M026:    Renter occupied
+        AMH9M027:    Renter occupied: Family households
+        AMH9M028:    Renter occupied: Family households: Married-couple family
+        AMH9M029:    Renter occupied: Family households: Married-couple family: Householder 15 to 34 years
+        AMH9M030:    Renter occupied: Family households: Married-couple family: Householder 35 to 64 years
+        AMH9M031:    Renter occupied: Family households: Married-couple family: Householder 65 years and over
+        AMH9M032:    Renter occupied: Family households: Other family
+        AMH9M033:    Renter occupied: Family households: Other family: Male householder, no spouse present
+        AMH9M034:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 15 to 34 years
+        AMH9M035:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 35 to 64 years
+        AMH9M036:    Renter occupied: Family households: Other family: Male householder, no spouse present: Householder 65 years and over
+        AMH9M037:    Renter occupied: Family households: Other family: Female householder, no spouse present
+        AMH9M038:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 15 to 34 years
+        AMH9M039:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 35 to 64 years
+        AMH9M040:    Renter occupied: Family households: Other family: Female householder, no spouse present: Householder 65 years and over
+        AMH9M041:    Renter occupied: Nonfamily households
+        AMH9M042:    Renter occupied: Nonfamily households: Householder living alone
+        AMH9M043:    Renter occupied: Nonfamily households: Householder living alone: Householder 15 to 34 years
+        AMH9M044:    Renter occupied: Nonfamily households: Householder living alone: Householder 35 to 64 years
+        AMH9M045:    Renter occupied: Nonfamily households: Householder living alone: Householder 65 years and over
+        AMH9M046:    Renter occupied: Nonfamily households: Householder not living alone
+        AMH9M047:    Renter occupied: Nonfamily households: Householder not living alone: Householder 15 to 34 years
+        AMH9M048:    Renter occupied: Nonfamily households: Householder not living alone: Householder 35 to 64 years
+        AMH9M049:    Renter occupied: Nonfamily households: Householder not living alone: Householder 65 years and over
+ 
+    Table 7:     Tenure by Families and Presence of Own Children
+    Universe:    Occupied housing units
+    Source code: B25012
+    NHGIS code:  AMIA
+        AMIAM001:    Total
+        AMIAM002:    Owner-occupied housing units
+        AMIAM003:    Owner-occupied housing units: With related children of the householder under 18
+        AMIAM004:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18
+        AMIAM005:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years only
+        AMIAM006:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years and 6 to 17 years
+        AMIAM007:    Owner-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: 6 to 17 years
+        AMIAM008:    Owner-occupied housing units: With related children of the householder under 18: No own children of the householder under 18
+        AMIAM009:    Owner-occupied housing units: No related children of the householder under 18
+        AMIAM010:    Renter-occupied housing units
+        AMIAM011:    Renter-occupied housing units: With related children of the householder under 18
+        AMIAM012:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18
+        AMIAM013:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years only
+        AMIAM014:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: Under 6 years and 6 to 17 years
+        AMIAM015:    Renter-occupied housing units: With related children of the householder under 18: With own children of the householder under 18: 6 to 17 years
+        AMIAM016:    Renter-occupied housing units: With related children of the householder under 18: No own children of the householder under 18
+        AMIAM017:    Renter-occupied housing units: No related children of the householder under 18
+ 
+    Table 8:     Tenure by Educational Attainment of Householder
+    Universe:    Occupied housing units
+    Source code: B25013
+    NHGIS code:  AMIB
+        AMIBM001:    Total
+        AMIBM002:    Owner-occupied housing units
+        AMIBM003:    Owner-occupied housing units: Less than high school graduate
+        AMIBM004:    Owner-occupied housing units: High school graduate (including equivalency)
+        AMIBM005:    Owner-occupied housing units: Some college or associate's degree
+        AMIBM006:    Owner-occupied housing units: Bachelor's degree or higher
+        AMIBM007:    Renter-occupied housing units
+        AMIBM008:    Renter-occupied housing units: Less than high school graduate
+        AMIBM009:    Renter-occupied housing units: High school graduate (including equivalency)
+        AMIBM010:    Renter-occupied housing units: Some college or associate's degree
+        AMIBM011:    Renter-occupied housing units: Bachelor's degree or higher
+ 
+    Table 9:     Occupants per Room (White Alone Householder)
+    Universe:    Occupied housing units with a householder who is White alone
+    Source code: B25014A
+    NHGIS code:  AMIC
+        AMICM001:    Total
+        AMICM002:    1.00 or less occupants per room
+        AMICM003:    1.01 or more occupants per room
+ 
+    Table 10:    Occupants per Room (Black or African American Alone Householder)
+    Universe:    Occupied housing units with a householder who is Black or African American alone
+    Source code: B25014B
+    NHGIS code:  AMID
+        AMIDM001:    Total
+        AMIDM002:    1.00 or less occupants per room
+        AMIDM003:    1.01 or more occupants per room
+ 
+    Table 11:    Occupants per Room (American Indian and Alaska Native Alone Householder)
+    Universe:    Occupied housing units with a householder who is American Indian and Alaska Native alone
+    Source code: B25014C
+    NHGIS code:  AMIE
+        AMIEM001:    Total
+        AMIEM002:    1.00 or less occupants per room
+        AMIEM003:    1.01 or more occupants per room
+ 
+    Table 12:    Occupants per Room (Asian Alone Householder)
+    Universe:    Occupied housing units with a householder who is Asian alone
+    Source code: B25014D
+    NHGIS code:  AMIF
+        AMIFM001:    Total
+        AMIFM002:    1.00 or less occupants per room
+        AMIFM003:    1.01 or more occupants per room
+ 
+    Table 13:    Occupants per Room (Native Hawaiian and Other Pacific Islander Alone Householder)
+    Universe:    Occupied housing units with a householder who is Native Hawaiian and Other Pacific Islander alone
+    Source code: B25014E
+    NHGIS code:  AMIG
+        AMIGM001:    Total
+        AMIGM002:    1.00 or less occupants per room
+        AMIGM003:    1.01 or more occupants per room
+ 
+    Table 14:    Occupants per Room (Some Other Race Alone Householder)
+    Universe:    Occupied housing units with a householder who is Some Other Race alone
+    Source code: B25014F
+    NHGIS code:  AMIH
+        AMIHM001:    Total
+        AMIHM002:    1.00 or less occupants per room
+        AMIHM003:    1.01 or more occupants per room
+ 
+    Table 15:    Occupants per Room (Two or More Races Householder)
+    Universe:    Occupied housing units with a householder who is Two or More Races
+    Source code: B25014G
+    NHGIS code:  AMII
+        AMIIM001:    Total
+        AMIIM002:    1.00 or less occupants per room
+        AMIIM003:    1.01 or more occupants per room
+ 
+    Table 16:    Occupants per Room (White Alone, Not Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is White alone, not Hispanic or Latino
+    Source code: B25014H
+    NHGIS code:  AMIJ
+        AMIJM001:    Total
+        AMIJM002:    1.00 or less occupants per room
+        AMIJM003:    1.01 or more occupants per room
+ 
+    Table 17:    Occupants per Room (Hispanic or Latino Householder)
+    Universe:    Occupied housing units with a householder who is Hispanic or Latino
+    Source code: B25014I
+    NHGIS code:  AMIK
+        AMIKM001:    Total
+        AMIKM002:    1.00 or less occupants per room
+        AMIKM003:    1.01 or more occupants per room
+ 
+    Table 18:    Total Population in Occupied Housing Units by Tenure by Year Householder Moved into Unit
+    Universe:    Total population in occupied housing units
+    Source code: B25026
+    NHGIS code:  AMIL
+        AMILM001:    Total population in occupied housing units
+        AMILM002:    Owner occupied
+        AMILM003:    Owner occupied: Moved in 2017 or later
+        AMILM004:    Owner occupied: Moved in 2015 to 2016
+        AMILM005:    Owner occupied: Moved in 2010 to 2014
+        AMILM006:    Owner occupied: Moved in 2000 to 2009
+        AMILM007:    Owner occupied: Moved in 1990 to 1999
+        AMILM008:    Owner occupied: Moved in 1989 or earlier
+        AMILM009:    Renter occupied
+        AMILM010:    Renter occupied: Moved in 2017 or later
+        AMILM011:    Renter occupied: Moved in 2015 to 2016
+        AMILM012:    Renter occupied: Moved in 2010 to 2014
+        AMILM013:    Renter occupied: Moved in 2000 to 2009
+        AMILM014:    Renter occupied: Moved in 1990 to 1999
+        AMILM015:    Renter occupied: Moved in 1989 or earlier
+ 
+    Table 19:    Mortgage Status by Age of Householder
+    Universe:    Owner-occupied housing units
+    Source code: B25027
+    NHGIS code:  AMIM
+        AMIMM001:    Total
+        AMIMM002:    Housing units with a mortgage
+        AMIMM003:    Housing units with a mortgage: Householder 15 to 34 years
+        AMIMM004:    Housing units with a mortgage: Householder 35 to 44 years
+        AMIMM005:    Housing units with a mortgage: Householder 45 to 54 years
+        AMIMM006:    Housing units with a mortgage: Householder 55 to 59 years
+        AMIMM007:    Housing units with a mortgage: Householder 60 to 64 years
+        AMIMM008:    Housing units with a mortgage: Householder 65 to 74 years
+        AMIMM009:    Housing units with a mortgage: Householder 75 years and over
+        AMIMM010:    Housing units without a mortgage
+        AMIMM011:    Housing units without a mortgage: Householder 15 to 34 years
+        AMIMM012:    Housing units without a mortgage: Householder 35 to 44 years
+        AMIMM013:    Housing units without a mortgage: Householder 45 to 54 years
+        AMIMM014:    Housing units without a mortgage: Householder 55 to 59 years
+        AMIMM015:    Housing units without a mortgage: Householder 60 to 64 years
+        AMIMM016:    Housing units without a mortgage: Householder 65 to 74 years
+        AMIMM017:    Housing units without a mortgage: Householder 75 years and over
+ 
+    Table 20:    Units in Structure (White Alone Householder)
+    Universe:    Occupied housing units with a householder who is White alone
+    Source code: B25032A
+    NHGIS code:  AMIO
+        AMIOM001:    Total
+        AMIOM002:    1, detached
+        AMIOM003:    1, attached
+        AMIOM004:    2
+        AMIOM005:    3 or 4
+        AMIOM006:    5 to 9
+        AMIOM007:    10 to 19
+        AMIOM008:    20 to 49
+        AMIOM009:    50 or more
+        AMIOM010:    Mobile home
+        AMIOM011:    Boat, RV, van, etc.
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, Katherine Knowles, Tracy Kugler, Finn Roberts, and Steven Ruggles.
+        IPUMS National Historical Geographic Information System: Version 19.0 
+        [dataset]. Minneapolis, MN: IPUMS. 2024. 
+        http://doi.org/10.18128/D050.V19.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
