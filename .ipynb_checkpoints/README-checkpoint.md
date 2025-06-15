@@ -2,6 +2,4 @@
 
 2-Data Analysis is where data is presented >>>START HERE<<<
 
-2-Data Analysis-300dpi is a duplicate of the above and used for high quality exporting purposes only (IGNORE)
-
 Submission for UP213 Urban Data Science
